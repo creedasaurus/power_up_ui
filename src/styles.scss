@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$pup-app-primary: mat-palette($mat-light-green, 500, 500, 500);
+$pup-app-accent: mat-palette($mat-grey, 900, 800, 900);
+
+$pup-app-warn: mat-palette($mat-red);
+
+$pup-app-theme: mat-dark-theme($pup-app-primary, $pup-app-accent, $pup-app-warn);
+
+@include angular-material-theme($pup-app-theme);
+
+body {
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  margin: 0px;
+  background-color: #fafafa;
+}
